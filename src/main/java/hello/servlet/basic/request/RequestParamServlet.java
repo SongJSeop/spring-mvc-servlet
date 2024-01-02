@@ -11,6 +11,7 @@ import java.io.IOException;
 @WebServlet(name = "requestParamServlet", urlPatterns = "/request-param")
 public class RequestParamServlet extends HttpServlet {
 
+    // GET 쿼리스트링 방식, POST HTML Form 방식 둘 다 가져올 수 있음
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("[전체 파라미터 조회] - start");
